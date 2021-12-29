@@ -1,0 +1,16 @@
+.App {
+  flex-flow: row;
+}
+
+.form {
+  border-right: 2px solid black;
+  width: 50%;
+}
+
+.reflected {
+  width: 50%;
+}
+
+.form-dt {
+  margin: 10px;
+}
