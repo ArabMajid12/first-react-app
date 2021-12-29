@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <input type="text" id="table-number" onclick="" />
+  <button>Print Table</button>
+  <ul id="table-list"></ul>
+  <script>
+    const numberInput = document.getElementById("table-number");
+    const ul = document.getElementById("table-list");
+    const printBtn = document.querySelector("button");
+
+    printBtn.addEventListener("click", function () {
+      ul.innerHTML = "";
+
+      const num = parseInt(numberInput.value);
+
+      for (let i = 1; i <= 10; i++) {
+        const li = document.createElement("li");
+
+        const result = num * i;
+
+        li.textContent = `${num} x ${i} = ${result}`;
+
+        ul.append(li);
+      }
+    });
+  </script>
+</body>
+
+</html>
