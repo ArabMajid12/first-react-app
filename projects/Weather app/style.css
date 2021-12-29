@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+
+body {
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  background-color: #fff;
+  /* background-image: linear-gradient(
+    135deg,
+    #ece7e7 16%,
+    #e0dbdb 18%,
+    #eee2e2 66%,
+    #ffffff 93%
+  ); */
+  max-width: 600px;
+  width: 500px;
+  text-align: center;
+  border-radius: 10px;
+  color: rgb(194, 196, 199);
+}
+
+.weather-logo {
+  position: relative;
+  background-color: black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+}
+
+.country-name {
+  padding: 15px;
+  font-weight: bold;
+  font-size: 1.444rem;
+}
+
+.weather-affects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.effects {
+  font-size: 1.222rem;
+  padding-left: 1.222rem;
+  padding-right: 1.222rem;
+}
+
+.effects-wind {
+  font-size: 1.222rem;
+  padding-left: 1.222rem;
+  padding-right: 1.222rem;
+  padding-bottom: 0;
+  padding-top: 0;
+  border-left: 2px solid rgb(178, 184, 160);
+  border-right: 2px solid rgb(178, 184, 160);
+}
+
+.weather-affects .temperature {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.search-country {
+  margin-top: 20px;
+}
+
+.search-country input[type="text"] {
+  width: 90%;
+  padding: 5px;
+  border: 2px solid rgb(194, 196, 199);
+}
+
+.search-country button {
+  margin: 15px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(178, 184, 160);
+  transition: 1s;
+  font-size: 20px;
+  color: aliceblue;
+}
+.search-country button:hover {
+  background-color: rgb(235, 238, 225);
+  letter-spacing: 2px;
+  color: black;
+}

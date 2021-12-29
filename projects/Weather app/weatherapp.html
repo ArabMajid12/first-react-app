@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="weather-logo">
+      <span class="icon" id="icon"></span>
+    </div>
+    <div class="weather-details">
+      <div class="country-name" style="margin-bottom: 10px;">
+        <span id="city" style="color: rgb(107, 49, 49);">City</span>
+      </div>
+      <div class="weather-affects">
+        <div class="effects">
+          <h4>Temperature</h4>
+          <p id="temp-value">0.0</p>
+        </div>
+        <div class="effects-wind">
+          <h4>Wind</h4>
+          <p id="wind-value">0.0</p>
+        </div>
+        <div class="effects">
+          <h4>Precipitation</h4>
+          <p id="preci-value">0.0</p>
+        </div>
+      </div>
+      <div class="search-country">
+        <input type="text" name="city-name">
+        <button>SEARCH</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

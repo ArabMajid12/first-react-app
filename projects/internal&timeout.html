@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interval & Time out property in JS.</title>
+</head>
+
+<body>
+
+  <div class="container">
+    The time Know is <h1 id="time"></h1>
+  </div>
+  <script>
+    // function greet(name) {
+    //   console.log("Good Morning " + name)
+    // }
+
+    // timeout = setTimeout(greet, 5000, "Dash")
+
+    // console.log(timeout)
+
+    // clearTimeout(timeout)
+
+
+    function displayTime() {
+      time = new Date();
+      console.log(time)
+      document.getElementById('time').innerHTML = time;
+    }
+    setInterval(displayTime, 1000);
+  </script>
+</body>
+
+</html>

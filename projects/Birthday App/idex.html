@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Birth Day App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+
+      background-color: rgb(53, 39, 44);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+    }
+
+    .container {
+      padding: 30px 35px;
+      width: 20%;
+      background-color: white;
+    }
+
+    .main-head {
+      margin-bottom: 20px;
+    }
+
+    b {
+      font-weight: 400;
+      font-size: 22px;
+    }
+
+    .birthday-container {
+      font-family: 'Poppins', sans-serif;
+      text-align: start;
+    }
+
+    .avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+
+    .celebration {
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-bottom: 25px;
+    }
+
+    img {
+      margin-right: 20px;
+    }
+
+    .birth-year {
+      text-align: start;
+      margin: 10px 0px;
+    }
+
+    h4 {
+      font-size: 18px;
+      margin: 2px 0px;
+    }
+
+    p {
+      font-size: 15px;
+      color: rgb(97, 125, 152);
+    }
+
+    button {
+      font-size: 18px;
+      letter-spacing: 1px;
+      margin-top: 5 px;
+      padding: 15px;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      background-color: rgb(117, 25, 60);
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div id="birth-container-id" class="birthday-container">
+      <div class="main-head">
+        <b>Birthday Reminder</b>
+      </div>
+      <div id="birth-list">
+        <ul id="celeList">
+          <li class="celebration">
+            <img src="./Images/team-1.jpg" alt="Error" class="avatar">
+            <div class="birth-year">
+              <h4 class="name">Basit</h4>
+              <p>24 Years</p>
+            </div>
+          </li>
+          <li class="celebration">
+            <img src="./Images/team-2.jpg" alt="Error" class="avatar">
+            <div class="birth-year">
+              <h4 class="name">Adil</h4>
+              <p>24 Years</p>
+            </div>
+          </li>
+          <li class="celebration">
+            <img src="./Images/team-3.jpg" alt="Error" class="avatar">
+            <div class="birth-year">
+              <h4 class="name">Ahmed</h4>
+              <p>24 Years</p>
+            </div>
+          </li>
+          <li class="celebration">
+            <img src="./Images/team-3.jpg" alt="Error" class="avatar">
+            <div class="birth-year">
+              <h4 class="name">Ahmed</h4>
+              <p>24 Years</p>
+            </div>
+          </li>
+          <li class="celebration">
+            <img src="./Images/team-3.jpg" alt="Error" class="avatar">
+            <div class="birth-year">
+              <h4 class="name">Ahmed</h4>
+              <p>24 Years</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="clear-btn">
+      <button id="clear-btn">Clear All</button>
+    </div>
+  </div>
+
+  <script>
+    // const birthUl = document.getElementsByClassName('celeList')
+    const clearBtn = document.getElementById('clear-btn')
+
+    clearBtn.addEventListener('click', function () {
+      const ulList = document.getElementById('celeList')
+      ulList.innerHTML = ''
+    });
+  </script>
+
+</body>
+
+</html>

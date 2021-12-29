@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Language & Coaching Institute</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="Regester.css">
+  <script src="click form.js" defer></script>
+</head>
+
+<body class="d-flex justify-content-center align-items-center">
+  <form class="admission-form p-5 bg-white position-relative">
+    <div class="head ">
+      <h2>Smart Language & Coaching Institute</h2>
+      <h3 class="mt-4 mb-3">Admission Form</h3>
+    </div>
+
+    <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-lg-8 col-md-12">
+        <div class="name-pic-input">
+          <div class="input-3-box"></div>
+          <div class="form-group mb-3">
+            <label for="firstname" class="text-secondary">First Name</label>
+            <input type="text" class="form-control " id="firstname" aria-describedby="emailHelp" name="firstname"
+              placeholder="Enter name">
+          </div>
+          <div class="form-group mb-3">
+            <label for="lastname" class="text-secondary">Last Name</label>
+            <input type="text" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp"
+              name="lastname" placeholder="Enter last name">
+          </div>
+
+          <div class="form-group mb-3 center">
+            <div class="form-input">
+              <label class="text-secondary " for="file-ip-1">Upload Image</label>
+              <input type="file" class="form-control" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-12">
+        <div class="pic-box">
+          <div class="preview">
+            <img class="" id="file-ip-1-preview">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <div class="form-group flex-column mb-3 mt-5">
+      <label for="fathername" class="text-secondary">Father Name</label>
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="fathername"
+        placeholder="Enter your father name">
+    </div>
+    <div class="form-group flex-column mb-3">
+      <label for="phone" class="text-secondary">Phone</label>
+      <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="phone"
+        placeholder="Enter phone number">
+    </div>
+    <div class="form-group flex-column mb-3">
+      <label for="birthday" class="text-secondary">Birthday</label>
+      <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="birthday"
+        placeholder="Enter your father name">
+    </div>
+
+
+    <div class="form-group d-flex flex-column mb-3" id="for-what">
+      <label for="for" class="text-secondary">For</label>
+      <div class="row-selection d-flex justify-content-around align-items-center">
+        <div
+          class="for-input d-flex justify-content-around align-items-center flex-column text-secondary mr-5 pt-2 w-40"
+          id="for-input-coac">
+          <input type="radio" name="for" id="coaching-radio" value="coaching">
+          <label for="coaching-radio">Coaching</label>
+        </div>
+        <div
+          class="for-input d-flex justify-content-around align-items-center flex-column text-secondary mr-5 pt-2 w-40"
+          id="for-input-comp">
+          <input type="radio" name="for" value="computer"><small>Computer</small>
+        </div>
+        <div
+          class="for-input d-flex justify-content-around align-items-center flex-column text-secondary mr-5 pt-2 w-40"
+          id="for-input-lang">
+          <input type="radio" name="for" value="language"> <small>Language</small>
+        </div>
+      </div>
+
+
+      <!-- <select name="for-what" id="" class="p-2 form-control">
+        <option value="select">Select for what</option>
+        <option value="Coaching" id="for-coac">Coaching</option>
+        <option value="Computer" id="for-comp">Computer</option>
+        <option value="Language" id="for-lang">Language</option>
+      </select> -->
+    </div>
+
+    <div class="form-group flex-column d-none  mb-3" id="coaching">
+      <label for="coaching" class="text-secondary">Class</label>
+      <select class="custom-select form-select" name="class">
+        <option selected>Select Class</option>
+        <option value="5">Fifth (5th)</option>
+        <option value="6">Sixth (6th)</option>
+        <option value="7">Seventh (7th)</option>
+        <option value="8">Eighth (8th)</option>
+        <option value="9">Nineth (9th)</option>
+        <option value="10">Matric (10th)</option>
+      </select>
+    </div>
+
+    <div class="form-group flex-column d-none mb-3" id="computer">
+
+      <div class="form-group flex-column mb-3">
+        <label for="timing" class="text-secondary">Time</label>
+        <select class="custom-select form-select" name="time">
+          <option value="Select Time">Select Time</option>
+          <option value="Select Time">3 to 5</option>
+          <option value="Select Time">4 to 6</option>
+          <option value="Select Time">5 to 7</option>
+          <option value="Select Time">6 to 8</option>
+        </select>
+      </div>
+
+      <label for="computer" class="text-secondary mb-3">Computer Courses</label>
+      <div class="courses d-flex justify-content-around flex-wrap">
+        <div class="for-input d-flex justify-content-around align-items-center flex-column text-secondary mr-5 pt-2">
+          <input type="radio" name="courses" value="CIT"> <small>C.I.T</small>
+        </div>
+        <div class="for-input d-flex justify-content-around align-items-center flex-column text-secondary mr-5 pt-2">
+          <input type="radio" name="courses" value="Web"> <small>Web Designing</small>
+        </div>
+        <div class="for-input d-flex justify-content-around align-items-center flex-column text-secondary mr-5 pt-2">
+          <input type="radio" name="courses" value="Graphics"> <small>Graphic Designing</small>
+        </div>
+        <div class="for-input d-flex justify-content-around align-items-center flex-column text-secondary mr-5 pt-2">
+          <input type="radio" name="courses" value="Digital"> <small>Digital Marketing</small>
+        </div>
+        <div class="for-input d-flex justify-content-around align-items-center flex-column text-secondary mr-5 pt-2">
+          <input type="radio" name="courses" value="Hardware"> <small>Hardware/Software</small>
+        </div>
+      </div>
+
+      <!-- <select name="course">
+        <option value="Select level">Select course</option>
+        <option value="Begganers">Begganers</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Advance">Advance</option>
+      </select> -->
+    </div>
+
+    <div class="form-group flex-column d-none mb-3" id="language">
+
+      <div class="form-group flex-column mb-3">
+        <label for="timing" class="text-secondary">Language Level</label>
+        <select class="custom-select form-select" name="time">
+          <option value="Select Time">Select Time</option>
+          <option value="Select Time">3 to 5</option>
+          <option value="Select Time">4 to 6</option>
+          <option value="Select Time">5 to 7</option>
+          <option value="Select Time">6 to 8</option>
+        </select>
+      </div>
+
+      <label for="language" class="text-secondary mb-3"> </label>
+      <div class="lang-level d-flex justify-content-around flex-wrap">
+        <div
+          class="for-input for-input for-input d-flex justify-content-around align-items-center flex-column text-secondary mr-5">
+          <input type="radio" name="courses" value=""><small>Beginners</small>
+        </div>
+        <div
+          class="for-input for-input for-input d-flex justify-content-around align-items-center flex-column text-secondary mr-5">
+          <input type="radio" name="courses" value=""><small>Intermediate</small>
+        </div>
+        <div
+          class="for-input for-input for-input d-flex justify-content-around align-items-center flex-column text-secondary mr-5">
+          <input type="radio" name="courses" value=""><small>Advance</small>
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-secondary w-100">Submit</button>
+
+    <div class="warning mt-5">
+      <h3 class="text-danger mb-3">Note</h3>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          "The Smart Coaching & language Institue" open at
+          "2 o'clock" and its closes at "8 o'clock".
+        </li>
+        <li class="list-group-item">
+          The coaching student's time duration is "minimum 3 hours" and it may be more. It depend on your child.
+        </li>
+        <li class="list-group-item">
+          The computer student's time duration is "2 hours"
+        </li>
+        <li class="list-group-item">
+          The language student's time duration is also "2 hours".
+        </li>
+        <li class="list-group-item">
+          The Coaching classes start at "2:30 o'clock".
+        </li>
+      </ul>
+    </div>
+  </form>
+
+</body>
+
+
+</html>
